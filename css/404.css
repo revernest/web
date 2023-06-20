@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+:root {
+  --font-size: calc(1vw + 1vh);
+  --ff-lobster: 'Lobster', cursive;
+  --ff-righteous: 'Righteous', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container { 
+    padding: 0 calc(var(--font-size) * 7);
+}
+
+body {
+    background-image: url(/img/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    overflow: hidden;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: calc(var(--font-size) * 1) 0;
+    width: 100%;
+}
+
+header .logo img{
+    height: calc(var(--font-size) * 3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: calc(var(--font-size) * 1.3);
+    color: white;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15% 0;
+    
+}
+
+p {
+    font-family: var(--ff-lobster);
+    font-size: calc(var(--font-size) * 3);
+    color: #ffdb58;
+}
+
+ul li {
+    list-style: none;
+    font-family: var(--ff-righteous);
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+}
